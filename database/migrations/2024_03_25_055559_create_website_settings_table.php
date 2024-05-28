@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('logo')->nullable();
             $table->string('site_title')->nullable();
+            $table->longText('info')->nullable();
+            $table->longText('map')->nullable();
             $table->string('email')->nullable();
             $table->string('address')->nullable();
             $table->string('contact_no')->nullable();

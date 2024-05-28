@@ -11,11 +11,6 @@ export default {
     ],
 
     theme: {
-        container: {
-            screens: {
-                '2xl': '1280px'
-            }
-        },
         extend: {
             typography: {
                 DEFAULT: {
@@ -28,7 +23,7 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                'brand': '#FF003A',
+                'brand': '#F8931D',
             },
             width: {
                 'cal30': 'calc(100% - 30px) !important',

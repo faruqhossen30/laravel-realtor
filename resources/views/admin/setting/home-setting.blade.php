@@ -23,12 +23,26 @@
                 </div>
 
                 <label for="logo" class="block text-sm font-medium mb-2 text-gray-500 pt-2">Site Logo</label>
-                <div class="flex ">
+                <div class="flex  justify-center">
                     <div class="w-full">
                         <input class="dropify" type="file" id="myDropify" name="logo"
                                     data-default-file="{{ asset('storage/' . $site->logo) }}">
                     </div>
+
                 </div>
+                <div class=" space-x-3 w-full">
+                    <x-form.textarea label="About us" name="info"  cols="30" rows="10" value="{{$site->info}}" />
+                    @error('info')
+                        <p class="text-sm text-red-600 mt-2">{{ $message }}</p>
+                    @enderror
+                </div>
+                <div class=" space-x-3 w-full">
+                    <x-form.textarea label="Map" name="map"  cols="30" rows="10" value="{{$site->map}}" />
+                    @error('map')
+                        <p class="text-sm text-red-600 mt-2">{{ $message }}</p>
+                    @enderror
+                </div>
+
 
                 <x-form.submit-button />
             </form>

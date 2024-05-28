@@ -50,13 +50,21 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
+    <style>
+        html {
+            scroll-behavior:smooth;
+        }
+    </style>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
 </head>
 
 <body class="bg-white dark:bg-gray-900">
 
+    @include('layouts.navigation')
     @yield('content')
+
+    @include('layouts.footer')
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     @stack('scripts')
 </body>

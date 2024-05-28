@@ -7,15 +7,17 @@ use App\Http\Controllers\Admin\Blog\BlogController;
 use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
-use App\Http\Controllers\Admin\Setting\AboutmeSettingController;
-use App\Http\Controllers\Admin\Setting\ChatSectionController;
+use App\Http\Controllers\Admin\Faq\FaqController;
+use App\Http\Controllers\Admin\Feature\FeatureController;
+use App\Http\Controllers\Admin\Package\PackageController;
 use App\Http\Controllers\Admin\Setting\ContactSettingController;
 use App\Http\Controllers\Admin\Setting\SiteSettingController;
 use App\Http\Controllers\Admin\Setting\SocialmediaSettingController;
 use App\Http\Controllers\Admin\Setting\WebsiteSettingController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\Testmonial\TestmonialController;
 use App\Http\Controllers\Admin\UserController;
-
+use App\Http\Controllers\ContactController;
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('role', RoleController::class);
@@ -25,9 +27,17 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     // Route::resource('role', RoleController::class);
     // Start Work
 
-    Route::resource('category',           CategoryController::class);
+    Route::resource('category',          CategoryController::class);
+    Route::resource('package',           PackageController::class);
+    Route::resource('user',              UserController::class);
+    Route::resource('faq',               FaqController::class);
+    Route::resource('testmonial',        TestmonialController::class);
+    Route::resource('feature',           FeatureController::class);
 
-    Route::resource('user',               UserController::class);
+
+
+    route::get('/contact',[ContactController::class,'create'])->name('contact');
+    route::post('/contact/send',[ContactController::class,'send'])->name('contact.send');
 
     Route::get('profile/',[AdminProfileController::class,'adminProfile'])->name('admin.profile');
     Route::put('profile/update/{id}',[AdminProfileController::class,'UpdateAdminProfile'])->name('admin.profile.update');

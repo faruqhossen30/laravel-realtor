@@ -27,6 +27,8 @@ class WebsiteSettingController extends Controller
     {
         $data = [
             'site_title' => $request->site_title,
+            'info' => $request->info,
+            'map' => $request->map,
         ];
         if ($request->file('logo')) {
             $file_name = $request->file('logo')->store('logo');
