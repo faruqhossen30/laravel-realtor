@@ -52,7 +52,7 @@
     </script>
     <style>
         html {
-            scroll-behavior:smooth;
+            scroll-behavior: smooth;
         }
     </style>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -64,8 +64,35 @@
     @include('layouts.navigation')
     @yield('content')
 
+
+
+    <a href="#" id="scrolltop" class=" fixed bottom-5 right-5 hidden animate-pulse ">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-12 bg-brand brorder rounded-full p-3 text-white ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+        </svg>
+    </a>
     @include('layouts.footer')
+
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#scrolltop').fadeIn();
+                } else {
+                    $('#scrolltop').fadeOut();
+                }
+            });
+            $('#scrolltop').click(function() {
+                $('html, body').animate({
+                    'scrollTop': 0
+                }, 2000);
+            });
+        });
+    </script>
+
     @stack('scripts')
 </body>
 

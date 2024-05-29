@@ -7,7 +7,7 @@
     <div class=" Container mx-auto grid grid-cols-12 py-12">
         <div class="col-span-12 lg:col-span-6 p-12 space-y-3 ">
 
-            <div id="accordion-collapse" data-accordion="collapse">
+            {{-- <div id="accordion-collapse" data-accordion="collapse">
 
                 @foreach ($faqs as $faq)
                     <h2 id="accordion-collapse-heading-{{ $faq->id }}">
@@ -31,7 +31,61 @@
                     </div>
                 @endforeach
 
+
+
+            </div> --}}
+
+
+            <div id="accordion-collapse" data-accordion="collapse" class=" space-x-1">
+
+                @foreach ($faqs as $faq)
+                    <div id="accordion-collapse-heading-{{$faq->id}}" class=" flex justify-between border rounded-xl px-3 py-3 bg-[#FFF8F0] "
+                        data-accordion-target="#accordion-collapse-body-{{$faq->id}}" aria-expanded="false"
+                        aria-controls="accordion-collapse-body-{{$faq->id}}"  >
+
+                        <P>{{$faq->question}}</P>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="w-8 h-8  border rounded-full p-2 text-brand">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+
+                    </div>
+                    <div id="accordion-collapse-body-{{$faq->id}}" class="hidden " aria-labelledby="accordion-collapse-heading-{{$faq->id}}">
+                        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">{{ $faq->answer }}</p>
+                        </div>
+                    </div>
+                @endforeach
             </div>
+
+            {{--
+            <div class=" shadow-lg w-full lg:w-2/3 mx-auto mt-4">
+                <div class=" overflow-hidden border-t">
+                    <label>
+                        <input class=" absolute opacity-0 peer" type="checkbox" />
+                        <p class="p-5 inline-block">Lable one</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="w-8 h-8  inline-block border rounded-full peer-checked:rotate-45 peef p-2 text-brand float-right mt-5 mr-2  bottom-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <div class=" bg-gray-300 max-h-0 peer-checked:max-h-screen">
+                            <p class="p-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime corporis
+                                non
+                                voluptatibus
+                                temporibus perferendis dolorum minus aliquam quam odio soluta, laborum eveniet iusto
+                                aliquid
+                                libero voluptas distinctio eius rem veniam consectetur praesentium aperiam at excepturi
+                                animi. Odio numquam autem facilis a, enim vitae modi ratione amet eos ullam quae
+                                eligendi.
+                            </p>
+                        </div>
+
+                    </label>
+                </div>
+                <div></div>
+                <div></div>
+            </div> --}}
+
 
         </div>
         <div class="col-span-12 lg:col-span-6">

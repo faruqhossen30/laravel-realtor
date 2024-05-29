@@ -3,7 +3,7 @@ use App\Models\Setting\WebsiteSetting;
  $site = WebsiteSetting::first();
 @endphp
    <!-------map-sections-------->
-    <section>
+    <section id="contactsection" class="scroll-smooth">
         <div class="container mx-auto grid grid-cols-12 gap-6 py-24 ">
 
             <div class="col-span-12 lg:col-span-6 bg-[#FDFAF8] p-6">

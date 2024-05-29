@@ -152,24 +152,24 @@
                         aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="#aboutussection"
                         class="text-gray-300 hover:text-brand hover:border-b-2 border-b-brand">About Us</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="#benifitessection"
                         class="text-gray-300 hover:text-brand hover:border-b-2 border-b-brand">Properties</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="#reviewSection"
                         class="text-gray-300 hover:text-brand hover:border-b-2 border-b-brand">Buyer</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="#pricingsection"
                         class="text-gray-300 hover:text-brand hover:border-b-2 border-b-brand">Seller</a>
                 </li>
                 <li>
-                    <a href="#"
-                        class="text-gray-300 hover:text-brand hover:border-b-2 border-b-brand">Contact</a>
+                    <a href="#contactsection"
+                        class="text-gray-300 hover:text-brand hover:border-b-2 border-b-brand ">Contact</a>
                 </li>
             </ul>
         </div>

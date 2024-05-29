@@ -1,4 +1,4 @@
-<section>
+<section id="aboutussection">
     <div class="container mx-auto grid grid-cols-12 py-24">
 
         <div class="col-span-12 hidden  lg:block lg:col-span-6">

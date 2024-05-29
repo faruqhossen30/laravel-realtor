@@ -1,4 +1,4 @@
-<section>
+<section id="#benifitessection">
     <div class="container mx-auto grid grid-cols-12 bg-[#00B67A] p-24">
 
         <div class="col-span-12  lg:col-span-6 hidden lg:block">
