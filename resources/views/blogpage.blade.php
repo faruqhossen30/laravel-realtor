@@ -130,7 +130,7 @@
                     <img class="w-full object-cover rounded-xl" src="{{ asset('storage/' . $blog->thumbnail) }}"
                         alt="Image Description">
                     <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-                        A woman sitting at a table.
+                        A woman sitting at a table. good desigition
                     </figcaption>
                 </figure>
 
