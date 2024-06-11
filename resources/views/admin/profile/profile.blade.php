@@ -112,7 +112,7 @@
                 </div>
 
             </div>
-            @include('admin.inc.modal.photo-gallery')
+
         </form>
     </main>
 @endsection

@@ -8,7 +8,7 @@
     <meta name="author" content="Faruq Hossen">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicone.png') }}">
 
-    <title> @yield('title', '')</title>
+    <title> @yield('title', ' Realtor Seo Marketing')</title>
 
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     <meta name="twitter:title" content="Dashboard | Comment Jet">
     <meta name="twitter:description"
         content="Get started with a free and open-source admin dashboard layout built with Tailwind CSS and Flowbite featuring charts, widgets, CRUD layouts, authentication pages, and more">
-    <meta name="twitter:image" content="https://flowbite-admin-dashboard.vercel.app/">
+    <meta name="twitter:image" content="{{asset('img/client/logo.png')}}">
 
     <!-- Facebook -->
 
