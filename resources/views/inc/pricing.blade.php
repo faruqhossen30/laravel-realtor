@@ -6,17 +6,17 @@
 
     <div class="container mx-auto  space-y-4">
         <div class="flex justify-center">
-            <button href="" class="text-yellow-400 border   rounded-full items-center py-1 px-8">
+            <button href="" class="text-yellow-400 border-2 border-[#F1E2D1] font-semibold tracking-widest  rounded-full items-center py-1 px-8">
                 OUR PRICING</button>
         </div>
-        <h1 class="text-center pb-12 text-3xl font-semibold">Explore Our Pricing Plan</h1>
+        <h1 class="text-center pb-12 text-5xl font-semibold text-primary">Explore Our Pricing Plan</h1>
     </div>
     <div class="container  mx-auto  grid grid-cols-12 gap-4">
 
         @foreach ($packages as $package)
             <div
-                class="col-span-12 lg:col-span-4 hover:bg-[#FEF6ED] bg-[#FDFAF8] space-y-6 border rounded p-5 mx-auto lg:mx-0 ">
-                <h2 class="text-xl font-bold">{{ $package->name }}</h2>
+                class="col-span-12 lg:col-span-4 hover:bg-[#FEF6ED] group bg-[#FDFAF8] space-y-6 border rounded p-5 mx-auto lg:mx-0 ">
+                <h2 class="text-2xl text-primary font-bold">{{ $package->name }}</h2>
                 <p class="font-bold text-xl py-6"> $<span class="text-4xl font-bold">{{ $package->price }}</span>/mo</p>
                 <hr>
 
@@ -37,12 +37,12 @@
                             </svg>
                         @endif
 
-                        <li>{{ $servicename->service }}</li>
+                        <li class="text-base">{{ $servicename->service }}</li>
                     </ul>
                 @endforeach
 
                 <div class="py-8">
-                    <button class="text-black  flex bg-[#f0eae7] rounded items-center py-2 px-24 ">
+                    <button class="text-black group-hover:text-white font-semibold  flex bg-[#f0eae7] group-hover:bg-brand rounded items-center py-2 px-24 ">
                         <span class=" text-xl font-normal">Select package</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-4 h-4 text-black font-bold">

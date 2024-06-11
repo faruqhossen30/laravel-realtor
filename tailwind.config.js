@@ -24,6 +24,7 @@ export default {
             },
             colors: {
                 'brand': '#F8931D',
+                'primary': '#371F18'
             },
             width: {
                 'cal30': 'calc(100% - 30px) !important',

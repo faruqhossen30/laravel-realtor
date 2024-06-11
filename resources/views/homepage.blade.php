@@ -34,3 +34,91 @@
     @include('inc.blog')
     <!------Our blog ------------>
 @endsection
+
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+@endpush
+
+@push('scripts')
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            // Feature Slider
+            $('#featureOwlSlider').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+            // Servie Slider
+            $('#servicesslider').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+            // Testmonial Slider
+            $('#testmonialslider').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+
+            // Blog Slider
+            $('#blogslider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots:true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        });
+    </script>
+@endpush

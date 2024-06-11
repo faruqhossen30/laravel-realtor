@@ -21,7 +21,7 @@
                                 <x-form.input label=" Designation" name="designation"
                                     value="{{ $testmonial->designation }}" />
 
-                                <textarea name="description" class="ckeditor" id="editor" cols="20" rows="9">{{ $testmonial->designation }}</textarea>
+                                <textarea name="description" class="ckeditor" id="editor" cols="20" rows="9">{{ $testmonial->description }}</textarea>
                                 @error('description')
                                     <p class="text-sm text-red-600 mt-2">{{ $message }}</p>
                                 @enderror

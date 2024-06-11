@@ -4,10 +4,10 @@ use App\Models\Setting\WebsiteSetting;
 @endphp
    <!-------map-sections-------->
     <section id="contactsection" class="scroll-smooth">
-        <div class="container mx-auto grid grid-cols-12 gap-6 py-24 ">
+        <div class="container mx-auto grid grid-cols-12 gap-6 my-24 " >
 
-            <div class="col-span-12 lg:col-span-6 bg-[#FDFAF8] p-6">
-                <h2 class=" text-3xl font-bold">Contact Us Right Now</h2>
+            <div class="col-span-12 lg:col-span-6 border-2 hover:border-brand rounded p-6 bg-[#FDFAF8]">
+                <h2 class=" text-3xl font-bold text-primary">Contact Us Right Now</h2>
                 <p class="py-3">Required fields are marked *</p>
 
                 <form action="{{route('contact.send')}}" method="POST" class=" space-y-3">
@@ -15,7 +15,7 @@ use App\Models\Setting\WebsiteSetting;
                     @csrf
                     <div class="flex space-x-3">
                         <input type="text" name="name"
-                            class="bg-gray-50 border border-brand text-gray-900 sm:text-sm rounded-lg focus:ring-brand focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-brand dark:focus:border-brand"
+                            class="bg-gray-50 hover:border border-brand text-gray-900 sm:text-sm rounded-lg focus:ring-brand focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-brand dark:focus:border-brand"
                             placeholder="Your name" required="">
 
                         <input type="email" name="email"
@@ -54,9 +54,9 @@ use App\Models\Setting\WebsiteSetting;
                 </form>
 
             </div>
-            <div class="col-span-12 lg:col-span-6 px-6 rounded">
-                <iframe src="{{$site->map}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-span-12 lg:col-span-6 hover:border-2 hover:border-brand rounded-lg h-fit w-full p-1">
+                <iframe src="{{$site->map}}" width="100%" height="495" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
+        </div>
     </section>
     <!-------map-sections-------->

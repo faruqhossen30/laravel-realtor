@@ -5,9 +5,9 @@
 <!--------Footer Section---------->
 <footer class="bg-[#025248]">
     <div class="container mx-auto pt-24  justify-center">
-        <div class="flex justify-between items-center  border rounded p-6 bg-brand space-x-6">
-            <div class="flex  items-center space-x-5 ">
-                <h2 class="text-2xl font-bold text-white">LET’S TALK</h2>
+        <div class="flex justify-between items-center  border rounded p-6 bg-brand -mt-40 space-x-6">
+            <div class="flex  items-center space-x-5  ">
+                <h2 class="text-5xl font-bold text-white py-4">LET’S TALK</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                     stroke="currentColor" class="w-6 h-6 text-white">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -149,9 +149,9 @@
             </div>
         </div>
     </div>
-    <div class="  flex justify-center">
+    <div class="  flex justify-center pb-6">
 
-        <p>Copyright © Realtor {{ date('Y') }} All rights reserved.</p>
+        <p class="text-gray-300">Copyright © <span class="text-white">Realtor</span> {{ date('Y') }} All rights reserved.</p>
     </div>
 </footer>
 <!--------Footer Section---------->

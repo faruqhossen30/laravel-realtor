@@ -46,7 +46,7 @@ class TestmonialController extends Controller
             'designation' => $request->designation,
         ];
         if($request->file('thumbnail')){
-            $file_name = $request->file('thumbnail')->store('thumbnail/testmonial');
+            $file_name = $request->file('thumbnail')->store('testmonial/thumbnail');
             $data['thumbnail'] = $file_name;
         }
         Testmonial::create($data);
@@ -85,7 +85,7 @@ class TestmonialController extends Controller
         ];
 
         if($request->file('thumbnail')){
-            $file_name = $request->file('thumbnail')->store('thumbnail/testmonial');
+            $file_name = $request->file('thumbnail')->store('testmonial/thumbnail');
             $data['thumbnail'] = $file_name;
         }
         Testmonial::firstwhere('id', $id)->update($data);
