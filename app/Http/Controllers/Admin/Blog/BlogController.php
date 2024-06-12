@@ -101,9 +101,9 @@ class BlogController extends Controller
      */
     public function show(string $id)
     {
-        if(!Auth::user()->can('blog  show')){
-            abort(403);
-        }
+        // if(!Auth::user()->can('blog  show')){
+        //     abort(403);
+        // }
     }
 
     /**

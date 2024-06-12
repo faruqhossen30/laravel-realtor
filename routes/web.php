@@ -27,8 +27,8 @@ Route::get('/test', function () {
 });
 
 route::get('/',[HomepageController::class,'Homepage'])->name('homepage');
-route::get('/blogpage/{slug}',[BlogPageController::class,'BlogPage'])->name('blog.page');
-route::get('/featurepage/{id}',[FeaturepageController::class,'FeaturePage'])->name('feature.page');
+route::get('blog/{slug}',[BlogPageController::class,'BlogPage'])->name('blog.page');
+route::get('/feature/{id}',[FeaturepageController::class,'FeaturePage'])->name('feature.page');
 
 
 Route::middleware('auth')->group(function () {

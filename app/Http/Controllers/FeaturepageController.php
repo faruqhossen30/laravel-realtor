@@ -11,6 +11,8 @@ class FeaturepageController extends Controller
     {
 
         $feature = Feature::firstWhere('id', $id);
+
+        // return  $feature;
         return view('featurepage', compact('feature'));
     }
 }

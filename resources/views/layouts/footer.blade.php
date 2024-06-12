@@ -24,7 +24,7 @@
 
         </div>
     </div>
-    <div class=" container mx-auto grid grid-cols-12 bg-[#025248] py-24">
+    <div class="container mx-auto grid grid-cols-12 bg-[#025248] py-24">
 
         <div class="lg:col-span-3 col-span-12 px-10 space-y-4 ">
             <div class=" flex space-x-2">

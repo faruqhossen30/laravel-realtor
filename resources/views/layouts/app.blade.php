@@ -13,8 +13,7 @@
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     {{-- Style Sheets --}}
 
@@ -28,7 +27,7 @@
     <meta name="twitter:title" content="Dashboard | Comment Jet">
     <meta name="twitter:description"
         content="Get started with a free and open-source admin dashboard layout built with Tailwind CSS and Flowbite featuring charts, widgets, CRUD layouts, authentication pages, and more">
-    <meta name="twitter:image" content="{{asset('img/client/logo.png')}}">
+    <meta name="twitter:image" content="{{ asset('img/client/logo.png') }}">
 
     <!-- Facebook -->
 
@@ -62,18 +61,19 @@
 <body class="bg-white dark:bg-gray-900">
 
     @include('layouts.navigation')
+
+
     @yield('content')
 
 
+    @include('layouts.footer')
 
     <a href="#" id="scrolltop" class=" fixed bottom-5 right-5 hidden animate-pulse ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-12 bg-brand brorder rounded-full p-3 text-white ">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-12 bg-brand brorder rounded-full p-3 text-white ">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
         </svg>
     </a>
-    @include('layouts.footer')
-
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -87,7 +87,7 @@
             $('#scrolltop').click(function() {
                 $('html, body').animate({
                     'scrollTop': 0
-                },3000);
+                }, 2000);
             });
         });
     </script>
