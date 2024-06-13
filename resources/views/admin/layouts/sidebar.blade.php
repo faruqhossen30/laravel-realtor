@@ -163,7 +163,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                               </svg>
 
-                            <span class="ml-3" sidebar-toggle-item>faq</span>
+                            <span class="ml-3" sidebar-toggle-item>FAQ</span>
                         </a>
                     </li>
                     <!------------package end--------->
@@ -198,7 +198,7 @@
                     <!--------------Setting start------>
 
                         <li>
-                            <a href="{{route('settingpage')}}"
+                            <a href="{{route('website.setting')}}"
                                 class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700 ">
                                 <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"

@@ -25,9 +25,9 @@
                     </svg>
                 </button>
                 <a href="{{ route('dashboard') }}" class="flex items-center ml-2 md:mr-24 cursor-pointer">
-                    <img src="https://flowbite.com/images/logo.svg" class="h-8 mr-3" alt="Flowbite" />
+                    <img src="{{asset('favicone.png')}}" class="h-8 mr-3" alt="Flowbite" />
                     <span
-                        class="self-center text-xl font-semibold text-gray-500 uppercase sm:text-2xl whitespace-nowrap dark:text-gray-200">Flowbite</span>
+                        class="self-center text-xl font-semibold text-gray-500 uppercase sm:text-2xl whitespace-nowrap dark:text-gray-200">Realtor</span>
                 </a>
                 <form action="#" method="GET" class="hidden lg:block lg:pl-3.5">
                     <label for="topbar-search" class="sr-only">Search</label>
